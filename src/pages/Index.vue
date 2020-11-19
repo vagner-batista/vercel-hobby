@@ -4,14 +4,14 @@
       <div class="col-8  self-center">
         <p>Aqui ficará o canvas para stream da câmera</p>
       </div>
-      <div class="q-pa-md">
-        <q-carrousel
+      <div class="q-pa-md col-12">
+        <q-carousel
+          v-model="slide"
           transition-prev="slide-right"
           transition-next="slide-left"
           swipeable
           animated
           control-color="primary"
-          navigation
           padding
           arrows
           height="300px"
@@ -19,13 +19,26 @@
         >
         <q-carousel-slide :name="1" class="column no-wrap yellowish">
           <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
-            <q-img class="rounded-borders col-6 full-height redish" src="https://cdn.quasar.dev/img/linux-avatar.png" />
-            <q-img class="rounded-borders col-6 full-height redish" src="https://cdn.quasar.dev/img/linux-avatar.png" />
-            <q-img class="rounded-borders col-6 full-height redish" src="https://cdn.quasar.dev/img/linux-avatar.png" />
-            <q-img class="rounded-borders col-6 full-height redish" src="https://cdn.quasar.dev/img/linux-avatar.png" />
+            <q-img class="rounded-borders col-4 full-height redish" src="fotos/foto-1.jpeg" />
+            <q-img class="rounded-borders col-4 full-height redish" src="fotos/foto-2.jpeg" />
+            <q-img class="rounded-borders col-4 full-height redish" src="fotos/foto-3.jpeg" />
           </div>
         </q-carousel-slide>
-      </q-carrousel>
+        <q-carousel-slide :name="2" class="column no-wrap yellowish">
+          <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
+            <q-img class="rounded-borders col-4 full-height redish" src="fotos/foto-4.jpeg" />
+            <q-img class="rounded-borders col-4 full-height redish" src="fotos/foto-5.jpeg" />
+            <q-img class="rounded-borders col-4 full-height redish" src="fotos/foto-6.jpeg" />
+          </div>
+        </q-carousel-slide>
+        <q-carousel-slide :name="3" class="column no-wrap yellowish">
+          <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
+            <q-img class="rounded-borders col-4 full-height redish" src="fotos/foto-4.jpeg" />
+            <q-img class="rounded-borders col-4 full-height redish" src="fotos/foto-3.jpeg" />
+            <q-img class="rounded-borders col-4 full-height redish" src="fotos/foto-5.jpeg" />
+          </div>
+        </q-carousel-slide>
+      </q-carousel>
       </div>
     </div>
   </q-page>
@@ -45,6 +58,11 @@
 
 <script>
 export default {
-  name: 'PageIndex'
+  name: 'PageIndex',
+  data () {
+    return {
+      slide: 1
+    }
+  }
 }
 </script>
