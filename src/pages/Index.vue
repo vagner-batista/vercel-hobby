@@ -15,12 +15,12 @@
           padding
           arrows
           height="300px"
-          class="bg-grey-1 shadow-2 rounded-borders"
+          class="bg-grey-1 shadow-2 rounded-borders blueish"
         >
-        <q-carousel-slide :name="1" class="column no-wrap">
+        <q-carousel-slide :name="1" class="column no-wrap yellowish">
           <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
-            <q-img class="rounded-borders col-6 full-height" />
-            <q-img class="rounded-borders col-6 full-height" />
+            <q-img class="rounded-borders col-6 full-height redish" />
+            <q-img class="rounded-borders col-6 full-height redish" />
           </div>
         </q-carousel-slide>
       </q-carrousel>
@@ -28,6 +28,18 @@
     </div>
   </q-page>
 </template>
+
+<style lang='scss' scoped>
+.redish{
+  background-color:$red-5;
+}
+.blueish{
+  background-color:$blue-4;
+}
+.yellowish{
+  background-color:$amber-13;
+}
+</style>
 
 <script>
 export default {
