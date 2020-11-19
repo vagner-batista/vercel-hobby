@@ -11,6 +11,7 @@
           transition-next="slide-left"
           swipeable
           animated
+          handle-arrow-keys
           control-color="primary"
           padding
           arrows
@@ -19,23 +20,77 @@
         >
         <q-carousel-slide :name="1" class="column no-wrap yellowish">
           <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
-            <q-img class="rounded-borders col-4 full-height redish" src="fotos/foto-1.jpeg" />
-            <q-img class="rounded-borders col-4 full-height redish" src="fotos/foto-2.jpeg" />
-            <q-img class="rounded-borders col-4 full-height redish" src="fotos/foto-3.jpeg" />
+            <q-img src="" class="rounded-borders col-4 full-height redish">
+              <template v-slot:error>
+                <div class="absolute-full flex flex-center bg-negative text-white">
+                  Imagem não disponível
+                </div>
+              </template>
+            </q-img>
+            <q-img src="" class="rounded-borders col-4 full-height redish">
+              <template v-slot:error>
+                <div class="absolute-full flex flex-center bg-negative text-white">
+                  Imagem não disponível
+                </div>
+              </template>
+            </q-img>
+            <q-img src="" class="rounded-borders col-4 full-height redish">
+              <template v-slot:error>
+                <div class="absolute-full flex flex-center bg-negative text-white">
+                  Imagem não disponível
+                </div>
+              </template>
+            </q-img>
           </div>
         </q-carousel-slide>
         <q-carousel-slide :name="2" class="column no-wrap yellowish">
           <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
-            <q-img class="rounded-borders col-4 full-height redish" src="fotos/foto-4.jpeg" />
-            <q-img class="rounded-borders col-4 full-height redish" src="fotos/foto-5.jpeg" />
-            <q-img class="rounded-borders col-4 full-height redish" src="fotos/foto-6.jpeg" />
+            <q-img src="" class="rounded-borders col-4 full-height redish">
+              <template v-slot:error>
+                <div class="absolute-full flex flex-center bg-negative text-white">
+                  Imagem não disponível
+                </div>
+              </template>
+            </q-img>
+            <q-img src="" class="rounded-borders col-4 full-height redish">
+              <template v-slot:error>
+                <div class="absolute-full flex flex-center bg-negative text-white">
+                  Imagem não disponível
+                </div>
+              </template>
+            </q-img>
+            <q-img src="" class="rounded-borders col-4 full-height redish">
+              <template v-slot:error>
+                <div class="absolute-full flex flex-center bg-negative text-white">
+                  Imagem não disponível
+                </div>
+              </template>
+            </q-img>
           </div>
         </q-carousel-slide>
         <q-carousel-slide :name="3" class="column no-wrap yellowish">
           <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
-            <q-img class="rounded-borders col-4 full-height redish" src="fotos/foto-4.jpeg" />
-            <q-img class="rounded-borders col-4 full-height redish" src="fotos/foto-3.jpeg" />
-            <q-img class="rounded-borders col-4 full-height redish" src="fotos/foto-5.jpeg" />
+            <q-img src="" class="rounded-borders col-4 full-height redish">
+              <template v-slot:error>
+                <div class="absolute-full flex flex-center bg-negative text-white">
+                  Imagem não disponível
+                </div>
+              </template>
+            </q-img>
+            <q-img src="" class="rounded-borders col-4 full-height redish">
+              <template v-slot:error>
+                <div class="absolute-full flex flex-center bg-negative text-white">
+                  Imagem não disponível
+                </div>
+              </template>
+            </q-img>
+            <q-img src="" class="rounded-borders col-4 full-height redish">
+              <template v-slot:error>
+                <div class="absolute-full flex flex-center bg-negative text-white">
+                  Imagem não disponível
+                </div>
+              </template>
+            </q-img>
           </div>
         </q-carousel-slide>
       </q-carousel>
